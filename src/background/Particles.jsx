@@ -5,7 +5,7 @@ export default function Particles() {
   const points = useRef()
 
   useFrame(({ clock }) => {
-    points.current.rotation.y = clock.elapsedTime * 0.05
+    points.current.rotation.y = clock.elapsedTime * 0.025 // half speed
   })
 
   return (
@@ -13,20 +13,14 @@ export default function Particles() {
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
-          count={3000}
+          count={15000}
           array={new Float32Array(
-            Array.from({ length: 9000 }, () => (Math.random() - 0.5) * 20)
+            Array.from({ length: 45000 }, () => (Math.random() - 0.5) * 40)
           )}
           itemSize={3}
         />
       </bufferGeometry>
-
-      <pointsMaterial
-        size={0.02}
-        color="#6a5acd"
-        transparent
-        opacity={0.8}
-      />
+      <pointsMaterial size={0.008} color="#a7b3ff" transparent opacity={0.7} />
     </points>
   )
 }
