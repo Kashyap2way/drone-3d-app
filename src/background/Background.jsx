@@ -1,13 +1,12 @@
 import { Suspense } from 'react'
 import Particles from './Particles'
-import GradientFog from './GradientFog'
 import ScrollScene from './ScrollScene'
+import WaveBackground from './WaveBackground'
 
 export default function Background() {
   return (
     <Suspense fallback={null}>
-      <color attach="background" args={['#05010a']} />
-      <GradientFog />
+      <WaveBackground />
       <Particles />
       <ScrollScene />
     </Suspense>
