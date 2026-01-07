@@ -47,8 +47,8 @@ export default function WaveBackground() {
   })
 
   return (
-    <mesh ref={mesh} position={[0, 0, -10]}>
-      <planeGeometry args={[50, 50]} />
+    <mesh ref={mesh} position={[0, 0, -50]}>
+    <planeGeometry args={[200, 400]} />   // much larger background area
       <shaderMaterial
         fragmentShader={fragmentShader}
         vertexShader={vertexShader}

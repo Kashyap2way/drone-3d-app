@@ -4,7 +4,7 @@ import Background from '../background/Background'
 
 export default function CanvasRoot() {
   return (
-    <Canvas camera={{ position: [0, 0, 6], fov: 60 }}>
+    <Canvas camera={{ position: [0, 0, 6], fov: 60, near: 0.1, far: 500 }}>
       <ScrollControls pages={4}>
         <Background />
       </ScrollControls>

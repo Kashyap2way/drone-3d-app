@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400&display=swap');
+/* Nanum Gothic has a clean modern look similar to Naru Sans Demo */
 
 .menu-bar {
   position: absolute;
@@ -7,13 +8,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 60px;
-  font-family: 'Cinzel', serif;
-  font-weight: 300;
+  gap: 120px;              /* doubled from 60px */
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
   color: white;
   letter-spacing: 2px;
   font-size: 22px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);  /* 50% weaker glow */
   z-index: 10;
   user-select: none;
 }
@@ -27,5 +28,5 @@
 .menu-item:hover {
   opacity: 1;
   transform: scale(1.05);
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
